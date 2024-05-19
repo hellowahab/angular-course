@@ -13,6 +13,12 @@ export class AppComponent {
 
   onCourseSelected(course:Course) {
     console.log('Cart clicked', course);
-    }
+  }
+
+  trackCourse(index:number, course:Course) {
+    return course.id;
+  }
+  
+
 
 }
