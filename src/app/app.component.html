@@ -23,6 +23,11 @@
     @empty {
         <h1>No Courses found</h1>
     }
+
+    <course-card *ngFor="let course of courses; index as i; first as isFirst; last as isLast"
+    [class.is-first] = "isFirst"
+    [class.is-last] = "isFirst"        
+    [course]="course" [index]="i + 1 " />    
 </div>
 
 
